@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        body{
+            background-image: linear-gradient(blue, paleturquoise); 
+       
+        }
+        .toolbar{
+            height: 100px;
+            font-size: 40px;
+            color:white;
+            /* background-color: rgba(37, 132, 196, 0.5);*/
+        } 
+        .main{
+            display: grid;
+            grid: 400px 100px / 300px 300px 300px; 
+            grid-gap: 10px; 
+            padding: 10px; 
+        }
+        .outer{
+            
+            text-align: center; 
+            background-color: white;
+            padding: 10px 10px; 
+            font-size: 30px; 
+            display: grid;
+           grid:auto auto;
+           /* box-shadow: inset 0 0 10px #000000; */
+
+        
+        }
+        .bigbox{
+            display: grid;
+            grid: auto auto / 1000px 200px;
+            
+            
+        }
+        .secondmain{
+    
+            display: grid;
+            grid: 200px 300px/ auto;
+            justify-content:space-evenly;
+            padding: 10px;
+            grid-gap: 10px;
+            width: 250px;
+        }
+        .secondouter{
+            /* width: 250px;
+            height: 150px; */
+           
+            padding: 10px;
+            font-size: 30px; 
+            background-color: white;
+           
+          
+        }
+        .mainitemsquare{
+            display: grid;
+            grid: 100px 100px/ 100px 100px;
+            align-items: center;
+            grid-gap: 5px;
+            justify-content: space-around;
+        }
+        .itemssquare{
+           height: 80px;
+           width: 80px;
+          border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        Amazon
+        <input type="text" style="width: 400px; height: 30px; border-radius: 10px; border: none;" placeholder="Search">
+    </div>
+    <div class="bigbox">
+    <div class="main">
+        <div class="outer">Up to 70% off | Styles for men
+            <div class="mainitems">
+            <img src="images/clothing.jpg" ><br>
+            <span style="font-size: medium;">Clothing </span>  
+            </div>
+            <div class="mainitems">
+            <img src="images/footwear.jpg"><br>
+            <span style="font-size: medium;">Footwear </span>  <br>
+             
+            </div>
+        </div> 
+        <div class="outer">Up to 70% off | Clearance store
+            <img src="images/oled.jpg" height="150px" width="280px"><br>
+            
+            <a href="#" style="font-size:medium;">Mega Fashion Days</a>
+           
+        </div> 
+        <div class="outer">Automotive essentials | Up to 60% off
+            <div class="mainitemsquare">
+                <div class="itemssquare">
+                    <img src="images/clothing.jpg" height="80px" width="80px">
+                    <span style="font-size: small;">Clothing </span>  
+          
+                </div>
+                <div class="itemssquare">
+                    <img src="images/cl.jpg" height="80px" width="80px">
+                    <span style="font-size: small;">Clothing </span>  
+          
+                
+                </div>
+                <div class="itemssquare">
+                    <img src="images/hel.jpg" height="80px" width="80px">
+                
+                </div>
+                <div class="itemssquare">
+                    <img src="images/vac.jpg" height="80px" width="80px">
+                
+                </div>
+
+            </div>
+        </div> 	
+        <!-- <div class="outer">hu
+
+        </div>
+        <div class="outer">Four</div> -->
+         
+        
+      
+    </div>
+    <div class="secondmain">
+        <div class="secondouter">Size in for your best experience.<br><br>
+            <button style="background-color: yellow; font-size: 25px; border-radius: 20%;" >Sign In</button>
+        </div>
+        <div class="secondouter">
+            Today's Deal<br>
+            <img src="images/lap.jpg" height="200px" width="200px">
+           <span style="font-size: large;"> <del>69000</del><ins> Rs50000</ins>
+           </span>
+        </div>
+   
+    </div>
+</div>
+
+</body>
+</html>
